@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0330CE54-12B7-42E7-B1C9-730E6FA349C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandJob.WebApi", "src\HandJob.WebApi\HandJob.WebApi.csproj", "{98E27BFC-B1CA-4338-8B7D-374D0AD197FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandJob.Domain", "src\HandJob.Domain\HandJob.Domain.csproj", "{D2100769-49AC-4BB4-AD7B-1A793B8B4C45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{24201E52-7377-41E1-8DC7-45C43EAE2C4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandJob.Tests", "tests\HandJob.Tests\HandJob.Tests.csproj", "{F8623710-6E8C-42C8-8309-04D6AF3D36FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandJob.Common", "src\HandJob.Common\HandJob.Common.csproj", "{B1FCE0DB-061B-48E8-98F2-B02C9FE4745A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98E27BFC-B1CA-4338-8B7D-374D0AD197FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98E27BFC-B1CA-4338-8B7D-374D0AD197FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98E27BFC-B1CA-4338-8B7D-374D0AD197FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98E27BFC-B1CA-4338-8B7D-374D0AD197FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2100769-49AC-4BB4-AD7B-1A793B8B4C45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2100769-49AC-4BB4-AD7B-1A793B8B4C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2100769-49AC-4BB4-AD7B-1A793B8B4C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2100769-49AC-4BB4-AD7B-1A793B8B4C45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8623710-6E8C-42C8-8309-04D6AF3D36FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8623710-6E8C-42C8-8309-04D6AF3D36FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8623710-6E8C-42C8-8309-04D6AF3D36FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8623710-6E8C-42C8-8309-04D6AF3D36FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1FCE0DB-061B-48E8-98F2-B02C9FE4745A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1FCE0DB-061B-48E8-98F2-B02C9FE4745A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1FCE0DB-061B-48E8-98F2-B02C9FE4745A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1FCE0DB-061B-48E8-98F2-B02C9FE4745A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{98E27BFC-B1CA-4338-8B7D-374D0AD197FE} = {0330CE54-12B7-42E7-B1C9-730E6FA349C9}
+		{D2100769-49AC-4BB4-AD7B-1A793B8B4C45} = {0330CE54-12B7-42E7-B1C9-730E6FA349C9}
+		{F8623710-6E8C-42C8-8309-04D6AF3D36FB} = {24201E52-7377-41E1-8DC7-45C43EAE2C4A}
+		{B1FCE0DB-061B-48E8-98F2-B02C9FE4745A} = {0330CE54-12B7-42E7-B1C9-730E6FA349C9}
+	EndGlobalSection
+EndGlobal
