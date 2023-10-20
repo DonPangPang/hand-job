@@ -1,0 +1,98 @@
+﻿@inherits LayoutComponentBase
+
+@inject NavigationManager NavigationManager
+
+<MApp>
+    <MNavigationDrawer App Permanent Clipped>
+        <ChildContent>
+            <MList Nav
+                   Dense>
+                <MListItemGroup Color="primary">
+                    @foreach (var item in _items)
+                    {
+                        <MListItem>
+                            <MListItemIcon>
+                                <MIcon>@item.Icon</MIcon>
+                            </MListItemIcon>
+
+                            <MListItemContent>
+                                <MListItemTitle>@item.Title</MListItemTitle>
+                            </MListItemContent>
+                        </MListItem>
+                    }
+                </MListItemGroup>
+            </MList>
+        </ChildContent>
+
+        <AppendContent>
+            <div class="pa-2">
+                <MButton Block Dark>LogOut</MButton>
+            </div>
+        </AppendContent>
+    </MNavigationDrawer>
+
+    <MAppBar App ClippedLeft>
+        <MAppBarNavIcon>
+            <ChildContent>
+                <MButton Icon Href="/" Color="pink" XLarge>
+                    <MIcon>
+                        mdi-ice-pop
+                    </MIcon>
+                </MButton>
+            </ChildContent>
+        </MAppBarNavIcon>
+        <MToolbarTitle>ICE BLOG</MToolbarTitle>
+        <MSpacer></MSpacer>
+        <MButton class="mx-2" Href="/search" Outlined>
+            <MIcon>
+                mdi-magnify
+            </MIcon>
+            搜索
+        </MButton>
+        <MButton class="mx-2"
+                 Fab
+                 Small
+                 Dark
+                  Target="_blank" Href="https://github.com/DonPangPang"
+                  Color="primary">
+             <MIcon>
+                 mdi-github
+             </MIcon>
+         </MButton>
+
+     </MAppBar>
+
+     <MMain>
+         <MContainer Fluid Id="scrolling-sheet-3">
+             <MErrorHandler>
+                 @* <AuthorizeView>
+                @Body
+                </AuthorizeView> *@
+                 @Body
+             </MErrorHandler>
+         </MContainer>
+     </MMain>
+ </MApp>
+
+ @code {
+
+    bool MiniDrawer = true;
+
+    void ToHome()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+
+    class Item
+    {
+        public string Title { get; set; }
+        public string Icon { get; set; }
+    }
+
+    private Item[] _items = new Item[]
+    {
+         new Item{ Title= "Dashboard", Icon= "mdi-view-dashboard" },
+         new Item { Title= "Photos", Icon= "mdi-image" },
+         new Item { Title= "About", Icon= "mdi-help-box" }
+    };
+}

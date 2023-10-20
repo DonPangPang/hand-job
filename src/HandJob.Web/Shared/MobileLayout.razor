@@ -1,0 +1,25 @@
+﻿@inherits LayoutComponentBase
+
+<MApp>
+    <MAppBar Color="deep-purple accent-4" App Dark>
+
+        <MToolbarTitle>@GlobalVars.AppName</MToolbarTitle>
+
+            <MSpacer></MSpacer>
+
+            <div style="margin-top: 20px; margin-right:20px">
+                <MSwitch @bind-Value="_mode" LeftText="@GlobalVars.DoJob"
+                    RightText="@GlobalVars.UndoJob" Color="deep-purple"
+                    TrackColor="#E5E6EB">
+                </MSwitch>
+            </div>
+        </MAppBar>
+        <MMain>
+            @Body
+    </MMain>
+</MApp>
+
+
+@code {
+    bool _mode = true;
+}

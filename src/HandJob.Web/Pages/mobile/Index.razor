@@ -1,0 +1,12 @@
+@page "/mobile"
+@page "/mobile/{type}"
+@layout MobileLayout
+
+<PageTitle>首页</PageTitle>
+
+<h1>Mobile</h1>
+
+@code {
+    [Parameter]
+    public JobType Type { get; set; }
+}
